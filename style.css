@@ -65,11 +65,13 @@ nav {
   padding: 0;
   color: rgb(0, 0, 0);
   font-size: 20px;
+  overflow-y: hidden;
 }
 #about {
   height: 100vh;
 }
 #about h2 {
+  overflow-y: hidden;
   text-align: center;
   padding-top: 70px;
 }
@@ -84,8 +86,8 @@ nav {
   font: bold;
   font-size: 1.5rem;
 }
-#about p:first-child {
-  color: rgb(24, 160, 160);
+#about h3 {
+  overflow-y: hidden;
 }
 .skill {
   /* text-align: center;
@@ -112,6 +114,7 @@ nav {
   position: relative;
 }
 #service h2 {
+  overflow-y: hidden;
   padding-top: 55px;
   text-align: center;
   text-decoration: underline;
@@ -132,6 +135,8 @@ nav {
   text-align: center;
 }
 #service .service-list .service-item h3 {
+  overflow-y: hidden;
+
   padding-top: 10px;
 }
 #service .service-list .service-item a {
@@ -188,6 +193,7 @@ nav {
   margin-bottom: 15px;
 }
 #Achievements .Achievements-item h3 {
+  overflow-y: hidden;
   position: relative;
   font-size: 20px;
   color: rgb(0, 0, 0);
@@ -198,6 +204,7 @@ nav {
   position: relative;
   color: rgb(0, 0, 0);
   font-size: 16px;
+  overflow-y: hidden;
 }
 #testimonial {
   position: relative;
@@ -228,6 +235,8 @@ nav {
 }
 #testimonial .carousel-item .carousel-content h5 {
   color: #ffffff;
+  overflow-y: hidden;
+
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -238,6 +247,7 @@ nav {
 }
 #testimonial .carousel-item .carousel-content h6 {
   color: #fff;
+  overflow-y: hidden;
 }
 #kontak {
   padding-top: 20px;
@@ -317,6 +327,9 @@ nav {
   border-radius: 60px;
   background: rgb(0, 0, 0);
 }
+#back span {
+  overflow-y: hidden;
+}
 @media screen and (max-width: 576px) {
   * {
     overflow-x: hidden;
@@ -346,6 +359,9 @@ nav {
   }
   #home img {
     margin-right: 0;
+  }
+  #Achievements .Achievements-item {
+    margin-left: 0;
   }
   #kontak {
     padding-top: 20px;
