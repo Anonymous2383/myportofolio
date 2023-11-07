@@ -65,9 +65,10 @@ nav {
   padding: 0;
   color: rgb(0, 0, 0);
   font-size: 20px;
-  overflow-y: hidden;
 }
 #about {
+  background-color: rgb(189, 235, 227);
+
   height: 100vh;
 }
 #about h2 {
@@ -86,12 +87,13 @@ nav {
   font: bold;
   font-size: 1.5rem;
 }
-#about h3 {
-  overflow-y: hidden;
+#about p:first-child {
+  color: rgb(24, 160, 160);
 }
-.skill {
-  /* text-align: center;
-  position: static; */
+.skill h3 {
+  overflow-y: hidden;
+  text-align: center;
+  padding-bottom: 20px;
 }
 #about .skill img {
   margin-top: 10px;
@@ -103,6 +105,8 @@ nav {
   -o-object-position: top center;
 }
 #about .skill #c1 img {
+  border-radius: 100px;
+  background-color: #ffffff;
   height: 40px;
 }
 #about .skill #taillwind img {
@@ -135,9 +139,8 @@ nav {
   text-align: center;
 }
 #service .service-list .service-item h3 {
-  overflow-y: hidden;
-
   padding-top: 10px;
+  overflow-y: hidden;
 }
 #service .service-list .service-item a {
   text-decoration: none;
@@ -212,8 +215,8 @@ nav {
   background: rgb(69, 61, 208);
   background: linear-gradient(
     90deg,
-    rgba(69, 61, 208, 1) 25%,
-    rgba(107, 165, 255, 1) 78%
+    rgba(48, 170, 150, 0.651) 25%,
+    rgb(63, 89, 128) 78%
   );
 }
 #testimonial h1 {
@@ -235,8 +238,6 @@ nav {
 }
 #testimonial .carousel-item .carousel-content h5 {
   color: #ffffff;
-  overflow-y: hidden;
-
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -247,7 +248,6 @@ nav {
 }
 #testimonial .carousel-item .carousel-content h6 {
   color: #fff;
-  overflow-y: hidden;
 }
 #kontak {
   padding-top: 20px;
@@ -322,13 +322,76 @@ nav {
   bottom: 50px;
   right: 50px;
 }
+#back span {
+  overflow-y: hidden;
+}
 #back:hover {
   transition-duration: 1.5s;
   border-radius: 60px;
   background: rgb(0, 0, 0);
 }
-#back span {
-  overflow-y: hidden;
+/* preloader */
+#pre {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding-top: 250px;
+  transition: 0.5s;
+}
+.spinner {
+  position: relative;
+  width: 15.7px;
+  height: 15.7px;
+}
+
+.spinner div {
+  animation: spinner-4t3wzl 1.875s infinite backwards;
+  background-color: #474bff;
+  border-radius: 50%;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.spinner div:nth-child(1) {
+  animation-delay: 0.15s;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.spinner div:nth-child(2) {
+  animation-delay: 0.3s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.spinner div:nth-child(3) {
+  animation-delay: 0.45s;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.spinner div:nth-child(4) {
+  animation-delay: 0.6s;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.spinner div:nth-child(5) {
+  animation-delay: 0.75s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes spinner-4t3wzl {
+  0% {
+    transform: rotate(0deg) translateY(-200%);
+  }
+
+  60%,
+  100% {
+    transform: rotate(360deg) translateY(-200%);
+  }
 }
 @media screen and (max-width: 576px) {
   * {
@@ -360,9 +423,6 @@ nav {
   #home img {
     margin-right: 0;
   }
-  #Achievements .Achievements-item {
-    margin-left: 0;
-  }
   #kontak {
     padding-top: 20px;
     max-width: 100%;
@@ -384,5 +444,23 @@ nav {
   #contact form button {
     margin-left: 150px;
     position: static;
+  }
+  #Achievements .Achievements-item {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1257px) {
+  #Achievements .Achievements-item {
+    margin-right: 50px;
+  }
+  * {
+    overflow-x: hidden;
+  }
+  #nav {
+    position: fixed;
+    width: 100%;
+  }
+  #navbarr a {
+    font-size: 13px;
   }
 }
