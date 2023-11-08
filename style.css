@@ -7,19 +7,27 @@
 body {
   overflow-x: hidden;
 }
+
 #nav {
-  background-color: rgb(0, 0, 0, 0.6);
+  background-color: rgba(3, 3, 3, 0.747);
   overflow-x: hidden;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(2px);
+}
+#nav .container {
+  max-width: 100%;
+  background-color: rgba(221, 206, 206, 0.315);
 }
 nav {
   position: relative;
   width: 100%;
 }
+#nav a {
+  color: #06b6d4;
+}
 #navbarr a {
   padding-left: 10px;
   font-size: 18px;
-  color: #ffffff;
+  color: #06b6d4;
 }
 #navbarr li {
   position: relative;
@@ -32,7 +40,7 @@ nav {
 
 #home {
   position: relative;
-  background-color: #ffffff;
+  background-color: #111827;
   padding: 210px 0;
   text-align: center;
 }
@@ -40,13 +48,13 @@ nav {
   border-radius: 10px 0 10px 0;
   padding-top: 50px;
   padding-bottom: 30px;
-  background-color: #79590080;
+  background-color: #111827;
 }
 #home img {
   margin-right: 1000px;
   width: 200px;
   height: 200px;
-  border: 5px solid #000000;
+  border: 5px solid #ffffff;
   object-fit: cover;
   -o-object-fit: cover;
   object-position: top center;
@@ -59,7 +67,7 @@ nav {
   position: relative;
   margin: 0;
   padding: 25px 0;
-  color: #000000;
+  color: #ffffff;
   font-size: 40px;
   text-transform: uppercase;
 }
@@ -69,25 +77,27 @@ nav {
   position: relative;
   margin: 0;
   padding: 0;
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 20px;
 }
 #about {
-  background-color: rgb(189, 235, 227);
+  background-color: #111827;
 
   height: 100vh;
 }
 #about h2 {
+  color: #06b6d4;
   overflow-y: hidden;
   text-align: center;
   padding-top: 70px;
 }
 #about h5 {
   text-align: center;
-  color: rgb(24, 160, 160);
+  color: #ffffff;
   padding-bottom: 10px;
 }
 #about p {
+  color: #ffffff;
   padding-top: 10px;
   font-family: Poppins;
   font: bold;
@@ -96,12 +106,19 @@ nav {
 #about p:first-child {
   color: rgb(24, 160, 160);
 }
-.skill h3 {
+#about .skill {
+  color: #ffffff;
+}
+.skill h2 {
+  color: #06b6d4;
   overflow-y: hidden;
   text-align: center;
   padding-bottom: 20px;
 }
 #about .skill img {
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000000;
   margin-top: 10px;
   margin-bottom: 10px;
   height: 50px;
@@ -111,15 +128,14 @@ nav {
   -o-object-position: top center;
 }
 #about .skill #c1 img {
-  border-radius: 100px;
   background-color: #ffffff;
   height: 40px;
 }
 #about .skill #taillwind img {
-  height: 30px;
+  height: 40px;
 }
 #service {
-  background-color: rgb(189, 235, 227);
+  background-color: #111827;
   color: #000000;
   position: relative;
 }
@@ -130,7 +146,7 @@ nav {
   text-decoration: underline;
   position: relative;
   margin-bottom: 50px;
-  color: #000000;
+  color: #06b6d4;
   font-size: 40px;
   font-family: "Poppins", sans-serif;
 }
@@ -143,6 +159,30 @@ nav {
   padding-top: 30px;
   margin-bottom: 10px;
   text-align: center;
+}
+#service .service-list .service-item .service1 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#service .service-list .service-item .service2 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+#service .service-list .service-item .service3 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#service .service-list .service-item .service4 {
+  background-color: #fff;
+  border-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 #service .service-list .service-item h3 {
   padding-top: 10px;
@@ -164,23 +204,23 @@ nav {
 }
 #Achievements {
   position: relative;
-  background-color: rgb(189, 235, 227);
+  background-color: #111827;
   padding: 135px 0;
 }
 #Achievements h2 {
   text-align: center;
   padding-top: 15px;
-  text-decoration: overline rgb(0, 0, 0);
+  text-decoration: overline #06b6d4;
   position: relative;
   margin-bottom: 50px;
-  color: rgb(0, 0, 0);
+  color: #06b6d4;
   font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
 }
 #Achievements .Achievements-item {
   position: relative;
   margin: 25px 0;
-  background-color: #b6bac4;
+  background-color: #ffffff;
   align-items: center;
   text-align: center;
   margin-left: 100px;
@@ -189,8 +229,8 @@ nav {
 }
 #Achievements .Achievements-item:hover {
   transition: 0.5s;
-
-  background-color: rgba(61, 60, 60, 0.6);
+  color: #ffffff;
+  background-color: rgba(231, 215, 215, 0.829);
 }
 #Achievements .Achievements-item img {
   border-radius: 10px;
@@ -457,6 +497,7 @@ nav {
   }
   #Achievements .Achievements-item {
     width: 80%;
+    right: 10px;
   }
 }
 @media screen and (max-width: 1257px) {
