@@ -456,12 +456,12 @@ nav {
     position: static;
   }
   #Achievements .Achievements-item {
-    margin-left: 0;
+    width: 80%;
   }
 }
 @media screen and (max-width: 1257px) {
   #Achievements .Achievements-item {
-    margin-right: 50px;
+    margin-left: 50px;
   }
   * {
     overflow-x: hidden;
