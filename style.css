@@ -83,6 +83,7 @@ nav {
 #about {
   background-color: #111827;
   height: 130vh;
+  overflow-y: hidden;
 }
 #about h2 {
   color: #06b6d4;
@@ -494,7 +495,7 @@ footer {
   border-radius: 10px;
   transform: scaleX(0);
   transform-origin: left;
-  text-transfrom: uppercase;
+  text-transform: uppercase;
   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
 }
 
@@ -561,8 +562,6 @@ footer {
 .skillbar .progress-line .c::after {
   content: "90%";
 }
-
-/* ////........Media Query........//// */
 
 @media (max-width: 700px) {
   .skillbar .skills {
@@ -632,9 +631,10 @@ footer {
     right: 10px;
   }
 }
+
 @media screen and (max-width: 1257px) {
   #about {
-    height: 70vh;
+    height: 90vh;
   }
   #Achievements .Achievements-item {
     margin-left: 50px;
